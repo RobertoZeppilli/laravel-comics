@@ -15,9 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config("comics");
-
         return view('home', [
             "comics" => $comics
         ]);
-    
+});
+
+Route::get('/movies', function () {
+    $movies = [
+        "title" => "Questi sono i film",
+        "movies" => [
+            "Avengers1",
+            "Avengers2",
+            "Avengers3"
+        ]
+        ];
+    return view('movies', $movies);
 });

@@ -1,14 +1,12 @@
-<div class="container">
-    <section class="comics">
-        @foreach ($comics as $comic)
-            <div class="comic">
-                <div class="comic-poster">
-                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                </div>
-                <div class="comic-title">
-                    <h5>{{ $comic['series'] }}</h5>
-                </div>
+@section('main-content')
+    <div class="container">
+        <section class="comics">
+            <div class="comics-container">
+                @include ('partials.comics')
             </div>
-        @endforeach
-    </section>
-</div>
+            <div class="flag read">
+                <a href="">read more</a>
+            </div>
+        </section>
+    </div>
+@endsection

@@ -12,6 +12,14 @@ main {
   background-color: #1c1c1c;
 }
 
+.flag {
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #0282f9;
+  color: #fff;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -53,41 +61,86 @@ header .jumbotron {
 header .jumbotron h3 {
   position: absolute;
   bottom: -20px;
-  background-color: #0282f9;
-  color: #fff;
-  padding: 10px 20px;
-  text-transform: uppercase;
 }
 
-main {
-  padding-top: 40px;
+.comics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
-main .comics {
+.comics .comics-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
-main .comics .comic {
+.comics .comic {
   width: calc(100% / 6 - 1rem);
-  margin-bottom: 40px;
+  border: 1px solid #fff;
+  margin-bottom: 30px;
 }
 
-main .comics .comic .comic-poster {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-main .comics .comic .comic-poster img {
-  display: block;
-  width: 100%;
+.comics .comic img {
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-main .comics .comic .comic-title h5 {
+.comics .comic .comic-title h5 {
   color: #fff;
+}
+
+.comics .read {
+  margin-top: 30px;
+}
+
+.comics .read a {
+  color: #fff;
+}
+
+.services {
+  background-color: #0282f9;
+}
+
+.services .services-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.services .services-container .service {
+  width: calc(100% / 5 - 1rem);
+  display: flex;
+  align-items: center;
+}
+
+.services .services-container .service img {
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.services .services-container .service h5 {
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #fff;
+}
+
+.movies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.movies p {
+  color: white;
 }
 

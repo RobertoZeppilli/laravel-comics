@@ -1,31 +1,70 @@
-main {
-    padding-top: 40px;
-    .comics {
+.comics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    .comics-container {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-    
-        .comic {
-            width: calc(100% / 6 - 1rem);
-            margin-bottom: 40px;
-            // background-color: red;
-    
-            .comic-poster {
-                width: 100%;
-                margin-bottom: 10px;
-    
-                img {
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+        width: 100%;
+    }
+    .comic {
+        width: calc(100% / 6 - 1rem);
+        border: 1px solid $lightText;
+        margin-bottom: 30px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .comic-title {
+            h5 {
+                color: $lightText;
             }
-            .comic-title {
-                h5 {
-                    color: $lightText;
-                }
+        }
+        
+    }
+    .read {
+        margin-top: 30px;
+        a {
+            color: $lightText;
+        }
+    }
+}
+.services {
+    background-color: $bgFlag;
+    .services-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        .service {
+            width: calc(100% / 5 - 1rem);
+            display: flex;
+            align-items: center;
+            img {
+                height: 80px;
+                object-fit: contain;
+            }
+            h5 {
+                margin-left: 10px;
+                text-transform: uppercase;
+                font-size: 10px;
+                color: $lightText;
             }
         }
     }
 }
+.movies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    p {
+        color: white;
+    }
+}
+
+

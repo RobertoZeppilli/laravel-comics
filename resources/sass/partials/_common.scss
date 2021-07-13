@@ -9,6 +9,13 @@ a {
 main {
     background-color: $bgMain;
 }
+.flag {
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: $bgFlag;
+    color: $lightText;
+}
 .container {
     max-width: 1170px;
     margin: 0 auto;
